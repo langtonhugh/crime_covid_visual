@@ -2,16 +2,17 @@
 
 This repostory contains the file structure and R script needed to replicate the main visual used in a recent
 [article](https://theconversation.com/lockdown-crime-trends-why-antisocial-behaviour-is-up-140479) on crime in Greater London before and after
-the COVID19 lockdown. At the time of writing, the script uses crime records from January 2016 to May 2020 (~4.5 million records).
+the COVID19 lockdown. At the time of writing, the script uses crime records from January 2016 to May 2020 (~4.5 million records), so it's 
+actually more up-to-date than the article.
 
-![](/visuals/full_met.png)
+![](/img/full_met.png)
 
 The visual is loosely based on those used by [the FT](https://www.ft.com/content/a26fbf7e-48f8-11ea-aeb3-955839e06441) to track COVID19 deaths.
 One powerful thing about their visuals is that they effortlessly account for _seasonal_ trends in death rates using previous years as a reference point.
 Readers can then intuitively understand what is 'normal', and identify fluctuations which are irregular, and thus likely a result of COVID19.
 
 Similarly, a key characteristic of long-term crime trends is seasonality. To disentangle fluctuations in crime, and pinpoint irregularity resulting
-from lockdown measures, we must account for typical monthly fluctuations. This what I try to do here.
+from lockdown measures, we must account for typical monthly fluctuations. This is what I try to do here.
 
 The main challenge in making this is simply downloading and compiling the data. First, follow the instructions below
 to download the open crime data from the online web portal. Alternatively, make use of the [API](https://data.police.uk/docs/) and 
@@ -32,7 +33,8 @@ use the Metropolitan Police Service, which serve Greater London. So, our selecti
 ![](/img/dates_met.png)
 
 We can then 'Generate file' at the bottom of the page, and on the next page, download a .zip file containing all our crime data for the past 36 months.
-Here, I call the .zip file **met_police_june2017_to_june2020** and save it to a local folder named **data**, as per the associated GitHub repository.
+Here, I call the .zip file **met_police_june2017_to_june2020** and save it to a local folder named **data**, as per the file structure and folder
+in this repository.
 
 Ideally, I'd like to go even further back, before June 2017, to get the best picture possible about seasonal crime trends. We can do this using the 
 open [archive](https://data.police.uk/data/archive/) data. This comes in a pretty unfriendly format, because you cannot download by force, and cannot 
@@ -42,7 +44,7 @@ select specific time periods. Anyway, you can download all the data prior to Jun
 ![](/img/archive.png)
 
 Remember that if your 36-month window is more recent than this demonstration, you will need to select a different corresponding archive folder! 
-I name mine **archive_to_jun_2017** and save it in the same **data** folder. Note that this might take 5-10 minutes to download, depending on your 
+Once downloaded, I name it **archive_to_jun_2017** and save it in the same **data** folder. Note that this might take 5-10 minutes to download, depending on your 
 internet connection. Once unzipped, you should have two folders in your **data** folder, named accordingly. Mine look like this:
 
 ![](/img/file_names.png)
