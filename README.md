@@ -14,10 +14,10 @@ Readers can then intuitively understand what is 'normal', and identify fluctuati
 Similarly, a key characteristic of long-term crime trends is seasonality. To disentangle fluctuations in crime, and pinpoint irregularity resulting
 from lockdown measures, we must account for typical monthly fluctuations. This is what I try to do here.
 
-The main challenge in making this is simply downloading and compiling the data. First, follow the instructions below
+The main challenge in making this is simply compiling the data. First, follow the instructions below
 to download the open crime data from the online web portal. Alternatively, make use of the [API](https://data.police.uk/docs/) and 
-[R package](https://github.com/njtierney/ukpolice) to get the equivalent data. Once you have the data saved and named according to the instructions,
-the R script should run smoothly to produce the output.
+[R package](https://github.com/njtierney/ukpolice) to get the equivalent information. Once you have the data saved and named according to the instructions,
+the R script should run smoothly to load the data and produce the output.
 
 ## Open crime data
 
@@ -33,7 +33,7 @@ use the Metropolitan Police Service, which serve Greater London. So, our selecti
 ![](/img/dates_met.png)
 
 We can then 'Generate file' at the bottom of the page, and on the next page, download a .zip file containing all our crime data for the past 36 months.
-Here, I call the .zip file **met_police_june2017_to_june2020** and save it to a local folder named **data**, as per the file structure and folder
+Here, I call the .zip file **met_police_june2017_to_may2020** and save it to a local folder named **data**, as per the file structure and folder
 in this repository.
 
 Ideally, I'd like to go even further back, before June 2017, to get the best picture possible about seasonal crime trends. We can do this using the 
@@ -44,7 +44,7 @@ select specific time periods. Anyway, you can download all the data prior to Jun
 ![](/img/archive.png)
 
 Remember that if your 36-month window is more recent than this demonstration, you will need to select a different corresponding archive folder! 
-Once downloaded, I name it **archive_to_jun_2017** and save it in the same **data** folder. Note that this might take 5-10 minutes to download, depending on your 
+Once downloaded, I name it **archive_to_may_2017** and save it in the same **data** folder. Note that this might take 5-10 minutes to download, depending on your 
 internet connection. Once unzipped, you should have two folders in your **data** folder, named accordingly. Mine look like this:
 
 ![](/img/file_names.png)

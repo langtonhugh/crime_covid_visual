@@ -11,21 +11,21 @@ library(purrr)
 options(scipen=99999)
 
 # Extract list of working directories + file names for each csv in the recent 36-month download.
-file_names <- paste("data/met_police_june2017_to_june2020/", list.files("data/met_police_june2017_to_june2020", "*.csv", recursive=TRUE), sep = "")
+file_names <- paste("data/met_police_june2017_to_may2020/", list.files("data/met_police_june2017_to_may2020", "*.csv", recursive=TRUE), sep = "")
 
 # Loop through each and load.
 met_list <- lapply(file_names, read_csv)
 
 # Load missing 2017 months from the archive data.
-jan17 <- read_csv("data/archive_to_jun_2017/2017-01/2017-01-metropolitan-street.csv")
-feb17 <- read_csv("data/archive_to_jun_2017/2017-02/2017-02-metropolitan-street.csv") 
-mar17 <- read_csv("data/archive_to_jun_2017/2017-03/2017-03-metropolitan-street.csv") 
-apr17 <- read_csv("data/archive_to_jun_2017/2017-04/2017-04-metropolitan-street.csv")
-may17 <- read_csv("data/archive_to_jun_2017/2017-05/2017-05-metropolitan-street.csv")
+jan17 <- read_csv("data/archive_to_may_2017/2017-01/2017-01-metropolitan-street.csv")
+feb17 <- read_csv("data/archive_to_may_2017/2017-02/2017-02-metropolitan-street.csv") 
+mar17 <- read_csv("data/archive_to_may_2017/2017-03/2017-03-metropolitan-street.csv") 
+apr17 <- read_csv("data/archive_to_may_2017/2017-04/2017-04-metropolitan-street.csv")
+may17 <- read_csv("data/archive_to_may_2017/2017-05/2017-05-metropolitan-street.csv")
 
 # Extract the Met 2016 from archive data.
-dates_2016 <- list.files("data/archive_to_jun_2017", pattern = "2016")
-extra <- paste("data/archive_to_jun_2017", "/", dates_2016, "/", dates_2016, "-", "metropolitan-street.csv", sep = "")
+dates_2016 <- list.files("data/archive_to_may_2017", pattern = "2016")
+extra <- paste("data/archive_to_may_2017", "/", dates_2016, "/", dates_2016, "-", "metropolitan-street.csv", sep = "")
 met_2016_list <- lapply(extra, read_csv)
 
 # Bind these to existing.
