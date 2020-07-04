@@ -28,8 +28,8 @@ dates_2016 <- list.files("data/archive_to_may_2017", pattern = "2016")
 extra <- paste("data/archive_to_may_2017", "/", dates_2016, "/", dates_2016, "-", "metropolitan-street.csv", sep = "")
 met_2016_list <- lapply(extra, read_csv)
 
-# Bind these to existing.
-met_full_df <- bind_rows(met_list, jan17, feb17, mar17, apr17, met_2016_list)
+# Bind everything together.
+met_full_df <- bind_rows(met_list, jan17, feb17, mar17, apr17, may17, met_2016_list)
 
 # Remove other crime.
 met_full_df <- met_full_df %>% 
