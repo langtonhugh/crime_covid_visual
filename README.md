@@ -1,6 +1,6 @@
 ## Lockdown crime type visuals
 
-This repostory contains the file structure and R script needed to replicate the main visual used in a recent
+This repository contains the file structure and R script needed to replicate the main visual used in a recent
 [article](https://theconversation.com/lockdown-crime-trends-why-antisocial-behaviour-is-up-140479) on crime in Greater London before and after
 the COVID19 lockdown. At the time of writing, the script uses crime records from January 2016 to May 2020 (~4.5 million records), so it's 
 actually more up-to-date than the article.
@@ -14,10 +14,10 @@ Readers can then intuitively understand what is 'normal', and identify fluctuati
 Similarly, a key characteristic of long-term crime trends is seasonality. To disentangle fluctuations in crime, and pinpoint irregularity resulting
 from lockdown measures, we must account for typical monthly fluctuations. This is what I try to do here.
 
-The main challenge in making this is simply compiling the data. First, follow the instructions below
-to download the open crime data from the online web portal. Alternatively, make use of the [API](https://data.police.uk/docs/) and 
-[R package](https://github.com/njtierney/ukpolice) to get the equivalent information. Once you have the data saved and named according to the instructions,
-the R script should run smoothly to load the data and produce the output.
+First, follow the instructions below to download the open crime data from the online web portal. Alternatively,
+make use of the [API](https://data.police.uk/docs/) to get
+the equivalent information. Once you have the data saved and named according to the instructions,
+the R script will compile all the open records and produce the visual from with the project file.
 
 ## Open crime data
 
