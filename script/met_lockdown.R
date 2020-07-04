@@ -31,7 +31,7 @@ met_2016_list <- lapply(extra, read_csv)
 # Bind everything together.
 met_full_df <- bind_rows(met_list, jan17, feb17, mar17, apr17, may17, met_2016_list)
 
-# Remove other crime.
+# Remove other crime. Separate object created (1) if needed, (2) for labels later.
 met_full_df <- met_full_df %>% 
   filter(`Crime type` != "Other crime")
 
