@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1593847821522.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3684306891",
+    "id" : "382ABF8B",
+    "lastKnownWriteTime" : 1593847691,
+    "last_content_update" : 1593847691,
+    "path" : "~/GitHub/crime_covid_visual/script/met_lockdown.R",
+    "project_path" : "script/met_lockdown.R",
+    "properties" : {
+        "cursorPosition" : "77,0",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
