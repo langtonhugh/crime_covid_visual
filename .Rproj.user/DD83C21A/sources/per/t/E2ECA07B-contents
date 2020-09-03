@@ -16,7 +16,7 @@ file_names <- paste("data/met_police_june2017_to_may2020/", list.files("data/met
 # Loop through each and load.
 met_list <- lapply(file_names, read_csv)
 
-# Load missing 2017 months from the archive data.
+# Load missing 2017 months from the archive data (this could also be done as below, maybe easier).
 jan17 <- read_csv("data/archive_to_may_2017/2017-01/2017-01-metropolitan-street.csv")
 feb17 <- read_csv("data/archive_to_may_2017/2017-02/2017-02-metropolitan-street.csv") 
 mar17 <- read_csv("data/archive_to_may_2017/2017-03/2017-03-metropolitan-street.csv") 
