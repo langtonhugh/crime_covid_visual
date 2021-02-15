@@ -47,6 +47,10 @@ met_stats_list <- met_full_df %>%
 # Month vector. January blank to reflect end of month counts.
 month_labs <- c(" ","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
 
+# As below, I make the plot using a loop so that I can annotate them individually if needed.
+# However, note that a similar version of the main plot could be made using facet_wrap() within
+# ggplot! In which case, no loop would be needed.
+
 # Base visual function.
 plot_fun <- function(x){
   ggplot() +

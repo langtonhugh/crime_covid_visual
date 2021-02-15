@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "4057812312",
+    "hash" : "122450527",
     "id" : "E2ECA07B",
-    "lastKnownWriteTime" : 1599142840,
-    "last_content_update" : 1599142840426,
+    "lastKnownWriteTime" : 1613374343,
+    "last_content_update" : 1613374343866,
     "path" : "~/GitHub/crime_covid_visual/script/met_lockdown.R",
     "project_path" : "script/met_lockdown.R",
     "properties" : {
-        "cursorPosition" : "24,0",
-        "scrollLine" : "8"
+        "cursorPosition" : "16,22",
+        "scrollLine" : "4"
     },
     "read_only" : false,
     "read_only_alternatives" : [
